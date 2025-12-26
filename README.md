@@ -65,9 +65,37 @@ https://gist.github.com/lym377/6c37ca6bf207a94e355a45dab1e5d9c7#file-gistfile1-t
 
 -----
 
-## 贡献
+一、注册验证账号
+1.注册  官方网站lade.io
+2.在github上个建立 一个gist
+3.点击官网live chat 进行验证，按提示提供注册邮箱及gist链接
+过一会，客服就会验证通过
+二、下载app并修改设置
+我用的是eooce大佬的singbox nodejs
+地址：https://github.com/eooce/Sing-box
+1.下载软件包，并将其中的nodejs文件夹中三个文件复制出来
+2.用文本编辑器打开start.sh
+编辑  argo 域名、json、端口、节点名称等信息，保存。
+可用fscarmen大佬的ArgoX  Cloudflare Json 生成网轻松获取: https://fscarmen.cloudflare.now.cc
+三、下载官网的lade连接程序
+如果是windows则可将lade.exe扔进windows系统文件夹方便调用,如果觉得有安全风险，完成设置后删除即可
 
-如果你有任何改进建议或发现 Bug，欢迎通过 GitHub Issues 或 Pull Requests 提交。
+1.登入lade
+lade login
+输入注册邮箱、网站密码
+用cd命令切换到nodejs文件夹下
+
+
+2创建lade 应用，假设zxcs是应用名称，可随意修改
+lade apps create zxcs
+3. 部署lade 应用, 名字和上面保持一致
+lade deploy --app zxcs
+
+4 等一会儿，查看日志，节点信息在日志中
+lade logs -a zxcs
+5.可以查看应用运行状态
+lade apps show zxcs
+
 
 -----
 ## 感谢老王的notejs https://github.com/eooce
