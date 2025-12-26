@@ -1,6 +1,9 @@
 
 # Lade CLI 多功能管理脚本
 https://www.youtube.com/watch?v=RL2lFf0ymYI
+
+https://gist.github.com/lym377/6c37ca6bf207a94e355a45dab1e5d9c7#file-gistfile1-txt
+
 这是一个跨平台的 Bash 和 PowerShell 脚本，旨在简化 Lade 应用的部署和日常管理。它自动化了 Lade CLI 的安装、应用部署、查看、删除和日志管理等常用操作，让你的开发和运维工作更加高效。
 
 -----
